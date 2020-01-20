@@ -20,9 +20,10 @@ var reload      = browserSync.reload;
 // -----------------
 
 // Start browserSync server
+
 gulp.task('browserSync',['php'], function() {
     browserSync.init({
-        proxy:"localhost:5000",
+        proxy:"localhost:5000", // You may need to change your port number, currently set to 5000 if already in use
         baseDir: "./",
         open:true,
         notify:false
@@ -31,7 +32,11 @@ gulp.task('browserSync',['php'], function() {
 });
 
 gulp.task('php', function(){
-    php.server({base:'./', port:5000, keepalive:true});
+    php.server({
+        base:'./',
+        port:5000, // Port number is also set her
+        keepalive:true
+    });
 });
 
 // Minify Javascript files
@@ -44,7 +49,7 @@ gulp.task('compress', function() {
 
 // Compiles sass into Assets
 
-// ... variables
+// Autoprefix variables
 var autoprefixerOptions = {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
 };
