@@ -34,7 +34,7 @@ gulp.task('browserSync',['php'], function() {
 gulp.task('php', function(){
     php.server({
         base:'./',
-        port:5000, // Port number is also set her
+        port:5000, // Port number is also set here
         keepalive:true
     });
 });
