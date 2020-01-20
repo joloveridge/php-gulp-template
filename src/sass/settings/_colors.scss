@@ -1,0 +1,30 @@
+// Palette
+
+$white:		      #FFFFFF;
+$black: 	      #000000;
+$red:             red;
+
+
+// Theme styles
+
+$brand:             $red;
+
+$font-color:        $black;
+$heading-color:     $black;
+$link-color:        $brand;
+$link-hover-color:  $brand;
+
+$border-color:      rgba(0,0,0,0.5);
+
+$main-background:   $white;
+
+// Footer
+
+$footer-background: $black;
+$footer-text:       $white;
+
+// Header
+
+$menu-link:         $black;
+$menu-link-current: $brand;
+$menu-link-hover:   $brand;

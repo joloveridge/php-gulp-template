@@ -1,0 +1,18 @@
+.wrapper {
+	max-width: 1300px;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+
+	@include max-screen(1280px) {
+		max-width: 1180px;
+	}
+
+	@include max-screen(1024px) {
+		max-width: 924px;
+	}
+
+	@include max-screen(768px) {
+		max-width: auto;
+	}
+}

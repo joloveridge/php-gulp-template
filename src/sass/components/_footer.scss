@@ -1,0 +1,9 @@
+.footer {
+  background: $footer-background;
+  width: 100%;
+  padding: 40px 0;
+
+  p, h2, h3 {
+    color: $footer-text;
+  }
+}

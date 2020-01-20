@@ -1,0 +1,29 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin link-hover() {
+  &:hover,
+  &:focus,
+  &:active {
+    @content
+  }
+}
+
+@mixin absolute-center {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,28 @@
+.skip-link:not(:focus):not(:hover) {
+  transform: translateY(-4em);
+  opacity: 0;
+}
+
+.skip-link:focus {
+  border-color: #062434;
+}
+
+.skip-link:hover, .skip-link:focus,
+.skip-link:hover, .skip-link:focus {
+  background-color: #08364E;
+  text-decoration: none;
+  color: #fff;
+}
+
+.skip-link {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 8px;
+  width: 100%;
+  opacity: 1;
+  text-align: center;
+}

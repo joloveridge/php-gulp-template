@@ -1,0 +1,54 @@
+h1, h2, h3, h4, h5, h6, p {
+  color: $heading-color;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+
+  @include max-screen(768px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+h2 {
+  font-family: $primary-font;
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  @include max-screen(768px) {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
+
+h3 {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  @include max-screen(768px) {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+}
+
+h4, h5, h6 {
+  font-family: $primary-font;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include max-screen(768px) {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+}
+
+p {
+  font-family: $primary-font;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

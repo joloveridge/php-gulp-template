@@ -1,0 +1,24 @@
+$button-background: $brand;
+$button-text:       $white;
+
+.button {
+  padding: 10px 28px;
+  border-radius: $base-radius;
+  display: inline-block;
+  color: $button-text;
+  background: $button-background;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: 1px solid $button-background;
+  transition: $transition-time;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+
+  @include link-hover {
+    background: transparent;
+    border: 2px solid $button-background;
+    color: $brand;
+  }
+}

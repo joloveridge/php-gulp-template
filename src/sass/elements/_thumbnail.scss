@@ -1,0 +1,13 @@
+// This is used for responsive thumbnails
+
+.thumbnail-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail {
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 0.5s ease-in-out;
+}

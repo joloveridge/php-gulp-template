@@ -1,0 +1,26 @@
+.header {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  padding: 30px 0;
+
+  &__logo {
+    display: block;
+    float: left;
+  }
+
+  nav {
+    width: 600px;
+    float: right;
+
+    .button {
+      position: absolute;
+      right: 0;
+      top: 30px;
+
+      @include max-screen($menu-mobile-breakpoint) {
+        position: relative;
+      }
+    }
+  }
+}

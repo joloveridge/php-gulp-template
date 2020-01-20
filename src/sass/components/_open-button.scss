@@ -1,0 +1,79 @@
+/* Hamburger Menu used in main header for mobile menu */
+
+.open-button {
+  display: none;
+
+  @include max-screen($menu-mobile-breakpoint) {
+    border: none;
+    background: transparent;
+    display: block;
+    width: 40px;
+    height: 36px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    position: absolute;
+    cursor: pointer;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+  }
+}
+
+.open-button {
+
+  span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: $black;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  span.open-button__menu {
+    background: transparent;
+    color: $white;
+    text-transform: uppercase;
+    bottom: 0;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+}
+
+.open-button span:nth-child(2) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.open-button span:nth-child(3) {
+  top: 12px;
+  transform-origin: left center;
+}
+
+.open-button span:nth-child(4) {
+  top: 22px;
+  transform-origin: left center;
+}
+
+.open-button.open span:nth-child(2) {
+  transform: rotate(45deg);
+  top: 0;
+  left: 6px;
+  background: $white;
+}
+
+.open-button.open span:nth-child(3) {
+  width: 0;
+  opacity: 0;
+}
+
+.open-button.open span:nth-child(4) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 7px;
+  background: $white;
+}
