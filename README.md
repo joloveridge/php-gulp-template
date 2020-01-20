@@ -49,3 +49,12 @@ To:
 https://myproject.test being whatever the address is you've given your project in MAMP.
 
 Re-run gulp and it should load WordPress so you can configure your set up!
+
+#Sass set up
+
+I'm using Sass for this project, and I've included some tools that might be helpful
+
+- Using an ITCSS methodology, you should create new components in the sass/components folder, and any basic/global use elements in the sass/elements 
+- A responsive, accessible mobile menu, using simple jQuery.
+- Some variables in _variables.scss, _colors.scss and _typography.scss to get you going
+- I've included a media queries plugin, making it easy to write custom media queries i.e. `@include max-screen(768px)`
