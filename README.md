@@ -50,7 +50,7 @@ https://myproject.test being whatever the address is you've given your project i
 
 Re-run gulp and it should load WordPress so you can configure your set up!
 
-#Sass set up
+# Sass set up
 
 I'm using Sass for this project, and I've included some tools that might be helpful
 
