@@ -28,7 +28,7 @@ This will run the project, and should open the project in a browser under http:/
 
 The gulpfile has a watch task which means every time you update a php, sass, image, or js file it will instantly re-run the gulp task and reload the project in the browser.
 
-#Running with WordPress
+# Running with WordPress
 
 This is just how I personally work, but once I've created all the necessary files and I'm ready to integrate with WordPress, I can then package all these files into it's own theme folder (including all the gulp files, etc) i.e. my-gulp-project.
 
