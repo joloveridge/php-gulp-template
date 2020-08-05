@@ -3,3 +3,5 @@ assets
 package-lock.json
 .idea/workspace.xml
 node_modules
+.idea/misc.xml
+.idea/php-gulp-template.iml
