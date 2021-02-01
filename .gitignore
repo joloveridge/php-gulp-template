@@ -5,3 +5,5 @@ package-lock.json
 node_modules
 .idea/misc.xml
 .idea/php-gulp-template.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/modules.xml
